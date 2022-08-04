@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'home/nabbar' %>
+    <div class="container>
+        <p class = "notice"><%= notice %></p>
+        <p class =  "alert"><%= alert %></p>
+        <br/>
+        <%= yield %>
+    </div>
   </body>
 </html>
