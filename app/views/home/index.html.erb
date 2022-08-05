@@ -8,6 +8,7 @@
 
 
 <% if @stock %>
+    <%= @stock.inspect %>
     <div> <%= @stock.company_name %> </div>
     <div> <%= @stock.latest_price %> </div>
     <div> <%= @stock.company_name %> </div>
@@ -15,13 +16,11 @@
     <%= @nothing %>
 <% end %>
 
-<%
-=begin%>
+
  
 <% if @error %>
     <div> <%= @error %></div>
 <% end %>
  
-<%
-=end%>
+
 
